@@ -9,9 +9,12 @@ header {
     padding: 20px;
 }
 /* Navigation */
+nav ul {
+    margin-left: -30px;
+}
 nav li {
     display: inline;
-    margin: 10px;
+    padding: 10px;
 }
 nav a {
     color: white;
@@ -88,10 +91,12 @@ img.pil {
     padding: 10px;
     max-width: 1350px;
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
 }
 main {
-    /* border: 1px solid #3a606e; */
+    border: 1px solid #3a606e;
     padding: 20px;
 }
 .veckomeny {
@@ -103,7 +108,7 @@ main {
 aside {
     padding: 10px;
     min-width: 250px;
-    /* border: 1px solid #3a606e; */
+    border: 1px solid #3a606e;
 }
 article {
     border: 1px solid #eaeaea;
@@ -112,7 +117,7 @@ article {
     padding: 10px;
     margin: 10px;
     box-shadow: 0px 0px 5px 2px #e0e0e0;
-    position:relative
+    position:relative;
 }
 article:hover {
     position: relative;
@@ -178,7 +183,19 @@ footer a {
         max-width: 1350px;
     }
     main {
-        border-left: 1px dotted #3a606e;
         flex-direction: row;
     }
+}
+
+@media screen and (min-width:998px) {
+    #container {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        align-items: flex-start;
+    }
+    main {
+        border-left: 1px dotted #3a606e; 
+    }
+
 }
