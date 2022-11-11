@@ -94,7 +94,6 @@ img.tiny {
     align-items: center;
 }
 main {
-    /* border: 1px solid #3a606e; */
     padding: 20px;
 }
 .veckomeny {
@@ -176,8 +175,6 @@ footer a {
     #container {
         width: 90%;
         flex-direction: row;
-        /* justify-content: flex-start; */
-        align-items: flex-start;
         flex-wrap: wrap;
     }
     #container.first-side {
@@ -198,19 +195,23 @@ footer a {
     }
 }
 
-@media screen and (min-with:780px) {
+/* @media screen and (min-width:780px) {
     img.small {
         max-width: 400px;
     }
     article {
         max-width: 400px;
     }
+    
+} */
+@media screen and (min-width:873px) {
+    .main-step-by-step {
+        border-left: 1px dotted #3a606e; 
+    }
 }
 
 @media screen and (min-width:1400px) {
-    main {
-        border-left: 1px dotted #3a606e; 
-    }
+    
     img.small {
         max-width: 500px;
     }
