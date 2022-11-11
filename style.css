@@ -94,7 +94,7 @@ img.tiny {
     align-items: center;
 }
 main {
-    border: 1px solid #3a606e;
+    /* border: 1px solid #3a606e; */
     padding: 20px;
 }
 .veckomeny {
@@ -106,7 +106,7 @@ main {
 aside {
     padding: 10px;
     min-width: 250px;
-    border: 1px solid #3a606e;
+    /* border: 1px solid #3a606e; */
 }
 article {
     border: 1px solid #eaeaea;
